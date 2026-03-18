@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridhimaa Store</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
+    header { background: #000; color: white; padding: 20px; text-align: center; }
+    nav { display: flex; justify-content: center; background: #333; flex-wrap: wrap; }
+    nav a { color: white; padding: 12px 16px; text-decoration: none; }
+    nav a:hover { background: #575757; }
+    .section-title { text-align: center; margin-top: 30px; font-size: 28px; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 30px; }
+    .product { background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .product img { width: 100%; border-radius: 10px; }
+    .product h3 { margin: 10px 0 5px; font-size: 18px; }
+    .product p { margin: 5px 0; font-weight: bold; }
+    .product button { background: black; color: white; border: none; padding: 8px 16px; cursor: pointer; border-radius: 5px; }
+    .product button:hover { background: #444; }
+    footer { background: black; color: white; text-align: center; padding: 10px; margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ridhimaa Store 🛍️</h1>
+  <p>Everything you love, in one place</p>
+</header>
+
+<nav>
+  <a href="#clothing">Clothing</a>
+  <a href="#art">Art</a>
+  <a href="#accessories">Accessories</a>
+  <a href="#digital">Digital</a>
+</nav>
+
+<!-- CLOTHING -->
+<h2 class="section-title" id="clothing">👗 Clothing</h2>
+<section class="container">
+  <div class="product">
+    <img src="https://via.placeholder.com/250" alt="Clothing">
+    <h3>Stylish Hoodie</h3>
+    <p>₹1299</p>
+    <button onclick="addToCart('Stylish Hoodie')">Add to Cart</button>
+  </div>
+</section>
+
+<!-- ART -->
+<h2 class="section-title" id="art">🎨 Art</h2>
+<section class="container">
+  <div class="product">
+    <img src="https://via.placeholder.com/250" alt="Art">
+    <h3>Handmade Sketch</h3>
+    <p>₹499</p>
+    <button onclick="addToCart('Handmade Sketch')">Add to Cart</button>
+  </div>
+</section>
+
+<!-- ACCESSORIES -->
+<h2 class="section-title" id="accessories">💍 Accessories</h2>
+<section class="container">
+  <div class="product">
+    <img src="https://via.placeholder.com/250" alt="Accessory">
+    <h3>Trendy Bracelet</h3>
+    <p>₹299</p>
+    <button onclick="addToCart('Trendy Bracelet')">Add to Cart</button>
+  </div>
+</section>
+
+<!-- DIGITAL PRODUCTS -->
+<h2 class="section-title" id="digital">📱 Digital Products</h2>
+<section class="container">
+  <div class="product">
+    <img src="https://via.placeholder.com/250" alt="Digital">
+    <h3>Instagram Growth Guide</h3>
+    <p>₹199</p>
+    <button onclick="addToCart('Instagram Guide')">Add to Cart</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ridhimaa Store</p>
+</footer>
+
+<script>
+  function addToCart(product) {
+    alert(product + " added to cart!");
+  }
+</script>
+
+</body>
+</html>
